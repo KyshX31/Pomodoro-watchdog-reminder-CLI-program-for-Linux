@@ -22,7 +22,7 @@ Custom Styling: Allows setting text colors and toggling italics for individual t
 
 Robust Signal Handling: Captures Ctrl+C and terminal window closure signals to gracefully stop the foreground session and correctly launch the background daemon.
 
-⚙️ Installation
+⚙️ <b>Installation<b>
 
 Prerequisites
 
@@ -36,14 +36,16 @@ To save: Type in terminal:
 
 sudo nano install.sh (or give any name, but use the same name for commands below too.) and hit enter to type your password. Then hit enter again.
 
+Now paste the entire script in install.sh in it. For that, type ctrl+shift+v after copying and to save and exit type: ctrl+o then hit enter and click ctrl+x.
+
 Make Executable:
 
-chmod +x install.sh
+chmod +x install.sh   and hit enter
 
 
 Run the Installer:
 
-./install.sh
+./install.sh         and hit enter
 
 
 The script will handle installing dependencies, placing the main Python script in /usr/local/bin, and configuring the necessary autostart files.
