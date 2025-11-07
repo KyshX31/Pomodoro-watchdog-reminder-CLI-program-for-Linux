@@ -30,7 +30,11 @@ This script is designed for Ubuntu/Debian-based Linux distributions and requires
 
 Installation Steps
 
-Save the Script: Save the full installation script provided in the last response as a file named install.sh (or similar).
+Save the Script: Save the full installation script provided as a file named install.sh (or similar).
+
+To save: Type in terminal: 
+
+sudo nano install.sh (or give any name, but use the same name for commands below too.) and hit enter to type your password. Then hit enter again.
 
 Make Executable:
 
@@ -47,7 +51,7 @@ The script will handle installing dependencies, placing the main Python script i
 Reboot (Required):
 For the autostart and daemon processes to be correctly initialized by your desktop environment, you must reboot your system once:
 
-sudo reboot
+sudo reboot (or reboot through GUI)
 
 
 💻 Usage Commands
@@ -60,7 +64,7 @@ Example
 
 Description
 
-add <task>
+add <task name here. No quotes required>
 
 add write report for Q4
 
@@ -108,17 +112,17 @@ italic 5
 
 Toggles italic formatting on/off for the task.
 
-done or exit
+done or exit 
 
 done
 
-Closes the current terminal session and starts the background timer daemon.
+Closes the current terminal session and starts the background timer daemon. or ctrl+c can also be clicked for ease.
 
 <number>
 
 30
 
-Sets the reminder interval (in minutes) for the daemon.
+Sets the reminder interval (in minutes) for the daemon. Timer can only be changed when you intentionally log on to the app through terminal typing todo-watchdog and enter. In reminder sessions however, you can not change the timer.
 
 help
 
@@ -143,3 +147,10 @@ If conditions are met, it launches a new full-screen terminal running todo-watch
 When the user exits the reminder session, the lock is released, and the daemon goes back to sleep.
 
 This reliable signal-handling and daemon architecture guarantees that the timer remains running, regardless of whether the user intentionally closes the window or presses Ctrl+C.
+
+Note: If all your todos are either completed or deleted, the daemon goes back to sleep. And you shall enter tasks either after fresh session is started or by manually launching the program in terminal. 
+
+
+This is a friction program for your procrastinations.
+
+<b> We believe each of your sessions are important. Every time you either restart your computer or log in to your desktop, you need to have certain intentions and todos to complete during the session. Now this daemon can better handle your procrastinatins. Have a great day. </b>
